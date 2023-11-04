@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta >
+  <link rel="stylesheet" href="styles.css">  
+</head>
+<body>
+  <h1 id="title">Movie Survey</h1>
+  <p id="description">This survey will try to determine how avid a movie buff you actually are!</p>
+  <form id="survey-form">
+    <label id="name-label" for="name">Name? <input placeholder="Jane Doe" name="name" id="name" type="text" required /></label>
+    <br>
+    <label id="email-label" for="email">Email? <input placeholder="jane.doe@moviemail.com" name="email" id="email" type="email" required /></label>
+    <br>
+    <label id="number-label" for="number">How many movies did you watch this month? <input placeholder="3"name="number" id="number" type="number" min="0" max="1000" required /></label>
+    <label for="dropdown">What kind of viewer are you?<select id="dropdown">
+      <option>Sporadic</option>
+      <option>Constrained by time</option>
+      <option>Voracious</option>
+      <option>Movie-Hater</option>
+      <option>Marvel geek</option>
+      <option>Other</option>
+      </select></label>
+      
+  <fieldset>
+    <legend>When do you watch your movies?</legend>
+  <label for="day">Day
+    <input value="day" id="day" name="period" type="radio">
+  </label>
+  <label for="night">Night
+    <input value="night" id="night" name="period" type="radio" checked>
+  </label>
+  <label for="afternoon"> Afternoon
+    <input value="afternoon" id="afternoon" name="period" type="radio">
+  </label>
+  <label for="never">Never
+    <input value="never" id="never" name="period" type="radio">
+  </label>
+  </fieldset>
+  <fieldset>
+    <legend>What genre do you like?</legend>
+    </label for="horror">Horror
+    <input id="horror" value="horror" name="genre" type="checkbox" checked>
+    </label for="romcom">Romcom
+    <input value="romcom"  id="romcom" name="genre" type="checkbox">
+
+    <label for="none">None
+    <input id="none" value="none" name="genre" type="checkbox">
+  </label>
+
+  </fieldset>
+
+  <fieldset>
+    <legend>Tell us your life story?</legend>
+    <textarea></textarea>
+  </fieldset>
+  <input id="submit" type="submit" value="Submit" />
+  </form>
+</body>
+</html>
